@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28fca5b0-d00a-4898-bc27-3da8ac14303d">
+  <name>ЕАС_ОбменСерверПовтИспКопируемый</name>
+  <synonym>
+    <key>ru</key>
+    <value>ЕАС обмен сервер повт исп копируемый</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <returnValuesReuse>DuringSession</returnValuesReuse>
+</mdclass:CommonModule>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Catalog.ГруппыПользователей.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Catalog.ГруппыВнешнихПользователей.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>0:f6ed8faa-4ca3-46f2-8813-815b11f8059f</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>0:33e0072d-7d5b-4298-ae77-31a7cb358f5d</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Catalog.Пользователи.StandardCommand.OpenList</commands>
+      <commands>Catalog.ГруппыПользователей.StandardCommand.OpenList</commands>
+      <commands>Catalog.ВнешниеПользователи.StandardCommand.OpenList</commands>
+      <commands>Catalog.ГруппыВнешнихПользователей.StandardCommand.OpenList</commands>
+      <commands>0:151a60c1-249a-4d57-aea4-f3b0e4685973</commands>
+      <commands>0:5eab8a1b-070f-4dcf-bdcc-a259c62c3693</commands>
+      <commands>0:f6ed8faa-4ca3-46f2-8813-815b11f8059f</commands>
+      <commands>0:33e0072d-7d5b-4298-ae77-31a7cb358f5d</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

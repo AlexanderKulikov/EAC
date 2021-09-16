@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="062d8da4-23bf-4739-873a-783bec9f952f">
+  <producedTypes>
+    <refType typeId="0c903b63-41b3-4259-9d60-dba2646ca745" valueTypeId="1a2476d8-76f2-4e73-a803-5ee2c785be8a"/>
+    <listType typeId="1c907d9c-3ac4-4363-b0d6-11aafc4e3007" valueTypeId="c38dac80-4aac-4f5a-9542-8746edb37aee"/>
+    <managerType typeId="96e8a743-0929-4bd9-af8f-911e48519936" valueTypeId="407b7a66-2017-40ed-a104-907e4dcf3808"/>
+  </producedTypes>
+  <name>ЕАС_ВидыПрисоединенныхДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды присоединенных данных (ЕАС)</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="851b68ce-70ce-45a2-b8ba-50e8ba4ef77e">
+    <name>ТабличныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табличный документ</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

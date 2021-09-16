@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23b15c79-5456-48cc-ad26-cd0d96102b95">
+  <name>ПрочиеОбъекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прочие объекты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.ЕАС_ОбщегоНазначенияКопируемый</content>
+  <content>CommonModule.ЕАС_ОбщегоНазначенияВызовСервераКопируемый</content>
+  <content>CommonModule.ЕАС_ОбменВызовСервераКопируемый</content>
+  <content>CommonModule.ЕАС_ОбменСерверПовтИспКопируемый</content>
+  <content>CommonModule.ЕАС_ОбработкаШаблоновКопируемый</content>
+  <content>CommonModule.ЕАС_ОбработкаШаблоновКлиентСерверКопируемый</content>
+  <content>CommonModule.ЕАС_ОбластиДанныхКопируемый</content>
+  <content>4b2eb8ca-aaf2-4f7c-bde3-7b9ce2517ea5</content>
+  <content>Enum.ЕАС_ВидыПрисоединенныхДанных</content>
+  <content>Enum.ЕАС_ВидыИсточниковДанных</content>
+  <content>CommonForm.ВыборСтандартногоПериода</content>
+  <content>CommonForm.ВыборСтандартногоПериодаМесяц</content>
+  <content>CommonForm.ВыборСтандартногоПериодаКвартал</content>
+  <content>CommonForm.ВыборСтандартногоПериодаКварталНарастающимИтогом</content>
+  <content>InformationRegister.ЕАС_ПрисоединенныеДанные</content>
+  <content>CommonModule.ОбновлениеИнформационнойБазыЕАС</content>
+  <content>CommonModule.КомпоновкаДанныхКлиентСервер</content>
+  <content>CommonForm.ЕАС_ФормаРедактированияТекста</content>
+  <content>Enum.ЕАС_ВидыПротоколовОбмена</content>
+  <content>CommonModule.ЕАС_ПротоколированиеКопируемый</content>
+  <parentSubsystem>Subsystem.ЕдинаяАвтоматизированнаяСистема</parentSubsystem>
+</mdclass:Subsystem>

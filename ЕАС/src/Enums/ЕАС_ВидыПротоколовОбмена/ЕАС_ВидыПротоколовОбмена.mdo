@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58b395af-1b1c-4112-bf5d-a90f9452c66d">
+  <producedTypes>
+    <refType typeId="1d54b59d-b32d-4f5d-99f6-7eeb56a1581e" valueTypeId="30767dbf-3568-4bf6-9ba1-48979e44c790"/>
+    <listType typeId="706c835c-b679-4bc7-a0b7-ebdf0c3bf1f8" valueTypeId="28fd646e-288f-4cf2-9043-8aa3a788ac42"/>
+    <managerType typeId="a224af23-da28-4edd-8cb0-124bc85c5590" valueTypeId="ff71e62c-c874-4b7c-b61c-593594862009"/>
+  </producedTypes>
+  <name>ЕАС_ВидыПротоколовОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды протоколов обмена (ЕАС)</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="bdd6a8a8-4973-4a32-86ec-84029c8e1d01">
+    <name>HTTP</name>
+    <synonym>
+      <key>ru</key>
+      <value>HTTP</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f83a3e40-c8f9-476a-be79-3e34650c8501">
+    <name>Вручную</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вручную</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0e3d7ed0-a7c1-4cb5-affb-536d1923f4f9">
+    <name>РегламентноеЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентное задание</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

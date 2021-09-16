@@ -1,0 +1,91 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.status.ru/pfi/message">
+	<import namespace="http://v8.1c.ru/8.1/data/enterprise/current-config"/>
+	<valueType name="Ref" base="xs:string" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.status.ru/pfi/message" name="СправочникСсылка.ЕАС_ШаблоныОтчетов" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.status.ru/pfi/message" name="СправочникСсылка.ЕАС_ПоказателиОтчетов" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.status.ru/pfi/message" name="СправочникСсылка.ЕАС_ПоляФормШаблонов" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.status.ru/pfi/message" name="ДокументСсылка.ЕАС_ОтчетыИнтеграции" base="d2p1:Ref"/>
+	<valueType name="ЕАС_ВидыПрисоединныхДанных" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">ТабличныйДокумент</enumeration>
+	</valueType>
+	<valueType name="ЕАС_ВидыИсточниковДанных" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">Факт</enumeration>
+		<enumeration xsi:type="xs:string">План</enumeration>
+	</valueType>
+	<objectType name="Message">
+		<property name="Date" type="xs:date" form="Attribute"/>
+		<property name="User" type="xs:string" form="Attribute"/>
+		<property name="Divider" type="xs:integer" form="Attribute"/>
+		<property xmlns:d3p1="http://www.status.ru/pfi/message" name="Changes" type="d3p1:Changes"/>
+	</objectType>
+	<objectType name="Changes">
+		<property name="MainNodeTo" type="xs:string" lowerBound="0" form="Attribute"/>
+		<property name="RegionTo" type="xs:int" form="Attribute"/>
+		<property name="MainNodeFrom" type="xs:string" form="Attribute"/>
+		<property name="RegionFrom" type="xs:int" form="Attribute"/>
+		<property name="Node" type="xs:string" form="Attribute"/>
+		<property name="MessageNo" type="xs:integer" lowerBound="0" form="Attribute"/>
+		<property name="ReceivedNo" type="xs:integer" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.status.ru/pfi/message" name="Data" type="d3p1:ДанныеПодсистемы" lowerBound="0" upperBound="-1" nillable="true" form="Element"/>
+		<property xmlns:d3p1="http://www.status.ru/pfi/message" name="Removed" type="d3p1:УдалениеОбъекта" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="Справочник.ЕАС_ШаблоныОтчетов">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Ссылка" type="d3p1:CatalogRef.ЕАС_ШаблоныОтчетов"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Объект" type="d3p1:CatalogObject.ЕАС_ШаблоныОтчетов"/>
+	</objectType>
+	<objectType name="Справочник.ЕАС_ПоказателиОтчетов">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Ссылка" type="d3p1:CatalogRef.ЕАС_ПоказателиОтчетов"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Объект" type="d3p1:CatalogObject.ЕАС_ПоказателиОтчетов"/>
+	</objectType>
+	<objectType name="Справочник.ЕАС_ПоляФормШаблонов">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Ссылка" type="d3p1:CatalogRef.ЕАС_ПоляФормШаблонов"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Объект" type="d3p1:CatalogObject.ЕАС_ПоляФормШаблонов"/>
+		<property xmlns:d3p1="http://www.status.ru/pfi/message" name="ЕдиницаИзмерения" type="d3p1:ЕдиницаИзмерения"/>
+	</objectType>
+	<objectType name="Документ.ЕАС_ОтчетыИнтеграции">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Ссылка" type="d3p1:DocumentRef.ЕАС_ОтчетыИнтеграции"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Объект" type="d3p1:DocumentObject.ЕАС_ОтчетыИнтеграции"/>
+		<property xmlns:d3p1="http://www.status.ru/pfi/message" name="Организация" type="d3p1:Организация"/>
+		<property xmlns:d3p1="http://www.status.ru/pfi/message" name="Ответственный" type="d3p1:Ответственный"/>
+	</objectType>
+	<objectType name="РегистрСведений.ЕАС_ПрисоединенныеДанные">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Объект" type="d3p1:InformationRegisterRecordSet.ЕАС_ПрисоединенныеДанные"/>
+	</objectType>
+	<objectType name="РегистрСведений.ЕАС_СоответствияОбъектовИнформационныхБаз">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Объект" type="d3p1:InformationRegisterRecordSet.ЕАС_СоответствияОбъектовИнформационныхБаз"/>
+	</objectType>
+	<objectType name="Организация">
+		<property name="Наименование" type="xs:string" nillable="false"/>
+		<property name="ИНН" type="xs:string" nillable="true"/>
+		<property name="КПП" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="ЕдиницаИзмерения">
+		<property name="Наименование" type="xs:string" nillable="false"/>
+		<property name="Код" type="xs:string"/>
+	</objectType>
+	<objectType name="Ответственный">
+		<property name="Наименование" type="xs:string" nillable="false"/>
+	</objectType>
+	<objectType name="ДанныеПодсистемы">
+		<property name="Значение">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://www.status.ru/pfi/message" name="ЕАС_ШаблоныОтчетов" type="d5p1:Справочник.ЕАС_ШаблоныОтчетов" lowerBound="0" nillable="true"/>
+				<property xmlns:d5p1="http://www.status.ru/pfi/message" name="ЕАС_ПоказателиОтчетов" type="d5p1:Справочник.ЕАС_ПоказателиОтчетов" lowerBound="0" nillable="true"/>
+				<property xmlns:d5p1="http://www.status.ru/pfi/message" name="ЕАС_ПоляФормШаблонов" type="d5p1:Справочник.ЕАС_ПоляФормШаблонов" lowerBound="0" nillable="true"/>
+				<property xmlns:d5p1="http://www.status.ru/pfi/message" name="ЕАС_ОтчетыИнтеграции" type="d5p1:Документ.ЕАС_ОтчетыИнтеграции" lowerBound="0" nillable="true"/>
+				<property xmlns:d5p1="http://www.status.ru/pfi/message" name="ЕАС_ПрисоединенныеДанные" type="d5p1:РегистрСведений.ЕАС_ПрисоединенныеДанные" lowerBound="0" nillable="true"/>
+				<property xmlns:d5p1="http://www.status.ru/pfi/message" name="ЕАС_СоответствияОбъектовИнформационныхБаз" type="d5p1:РегистрСведений.ЕАС_СоответствияОбъектовИнформационныхБаз" lowerBound="0" nillable="true"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="УдалениеОбъекта">
+		<property name="Ссылка">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://www.status.ru/pfi/message" name="ЕАС_ШаблоныОтчетов" type="d5p1:СправочникСсылка.ЕАС_ШаблоныОтчетов" lowerBound="0" nillable="true"/>
+				<property xmlns:d5p1="http://www.status.ru/pfi/message" name="ЕАС_ПоказателиОтчетов" type="d5p1:СправочникСсылка.ЕАС_ПоказателиОтчетов" lowerBound="0" nillable="true"/>
+				<property xmlns:d5p1="http://www.status.ru/pfi/message" name="ЕАС_ПоляФормШаблонов" type="d5p1:СправочникСсылка.ЕАС_ПоляФормШаблонов" lowerBound="0" nillable="true"/>
+				<property xmlns:d5p1="http://www.status.ru/pfi/message" name="ЕАС_ОтчетыИнтеграции" type="d5p1:ДокументСсылка.ЕАС_ОтчетыИнтеграции" lowerBound="0" nillable="true"/>
+			</typeDef>
+		</property>
+	</objectType>
+</package>

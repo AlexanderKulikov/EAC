@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92dd3333-6b0d-4cfd-a84b-c8506357ad20">
+  <name>ЕАС_ОбластиДанныхКопируемый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Области данных копируемый (ЕАС)</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+</mdclass:CommonModule>

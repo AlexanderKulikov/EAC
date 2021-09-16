@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>0:b850d595-0fab-4f29-9eb2-334fe98c8adf</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>0:f4554046-493e-4960-94df-0a8b9d02f474</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>DataProcessor.ПоискИУдалениеДублей.Command.ПоискИУдалениеДублей</commands>
+      <commands>0:bb3d8c09-0a16-47ae-a113-d33038c15948</commands>
+      <commands>0:b850d595-0fab-4f29-9eb2-334fe98c8adf</commands>
+      <commands>0:a1c76fb2-6237-41a1-8b2f-66d8c1ed2fd9</commands>
+      <commands>0:d52cf615-a846-44fb-9b13-61084d0a3c77</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

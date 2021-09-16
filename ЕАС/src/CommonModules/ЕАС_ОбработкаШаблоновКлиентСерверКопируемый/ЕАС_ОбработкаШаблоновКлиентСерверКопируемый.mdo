@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d87fd67c-9245-4888-b62d-f4c7f738f843">
+  <name>ЕАС_ОбработкаШаблоновКлиентСерверКопируемый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка шаблонов клиент сервер копируемый (ЕАС)</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+</mdclass:CommonModule>
